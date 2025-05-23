@@ -12,12 +12,12 @@ let what = ['my homework', 'my phone', 'the car'];
 let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
 function getRandomNumber(min,max) {
-  return Math.floor(Math.random) * (max -min) + min;
+  return Math.floor(Math.random() * (max -min) + min);
 }
 
 
 function getRandom(anyArray){
-  let max = anyArray.legth - 1;
+  let max = anyArray.length - 1;
   let min = 0;
   console.log(max, min, anyArray)
   let random = getRandomNumber(min,max);
@@ -30,3 +30,4 @@ window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
  document.body.innerHTML = getRandom(who) + " " + getRandom(action) + " " + getRandom(what) + " " + getRandom(when)
+}
